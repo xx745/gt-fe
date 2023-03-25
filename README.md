@@ -24,7 +24,7 @@ bash.exe -c "ifconfig eth0 | grep 'inet '"
 Start-Process powershell -verb runas
 ```
 
-4. Set up port forwarding using `<WSL2_IP_ADDRESS>` from pt. 2
+4. In the new admin window set up port forwarding using `<WSL2_IP_ADDRESS>` from pt. 2
 ```powershell
 netsh interface portproxy add v4tov4 listenport=19000 listenaddress=0.0.0.0 connectport=19000 connectaddress=<WSL2_IP_ADDRESS>
 ```
