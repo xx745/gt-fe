@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "ignorePatterns": ["babel.config.js"],
+  "root": true,
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-eval": "error",
+    "no-multi-spaces": "error",
+    "eol-last": ["error", "always"],
+    "no-dupe-keys": "error",
+    "no-irregular-whitespace": "error",
+    "camelcase": "warn",
+    "max-len": ["error", { "code": 200, "tabWidth": 2 }],
+    "no-tabs": "error",
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "comma-dangle": ["error", "never"],
+    "no-trailing-spaces": "error",
+    "no-whitespace-before-property": "error",
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+    "prefer-const": "error",
+    "space-before-function-paren": ["error", { "asyncArrow": "always", "named": "never" }],
+    "@typescript-eslint/no-unsafe-assignment": "warn",
+    "@typescript-eslint/no-floating-promises": "warn"
+  }
+}

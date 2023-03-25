@@ -15,6 +15,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
     backgroundColor: 'lightblue',
-    paddingTop: StatusBar.currentHeight,
+    paddingTop: StatusBar.currentHeight
   }
 });

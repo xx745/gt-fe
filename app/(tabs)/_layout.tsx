@@ -23,13 +23,13 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarShowLabel: false,
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint
       }}>
       <Tabs.Screen
         name="index"
         options={{
           headerShown: false,
-          tabBarIcon: ({ color }) => <TabBarIcon name="dumbbell" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="dumbbell" color={color} />
           // headerRight: () => (
           //   <Link href="/modal" asChild>
           //     <Pressable>
@@ -50,7 +50,7 @@ export default function TabLayout() {
         name="two"
         options={{
           headerShown: false,
-          tabBarIcon: ({ color }) => <TabBarIcon name="calendar" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="calendar" color={color} />
         }}
       />
     </Tabs>
